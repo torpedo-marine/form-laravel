@@ -13,8 +13,9 @@
             @csrf
             <div class="form-group">
                 <label>お名前</label>
-                <p>{{ $validated['name'] }}</p>
-                <input type="hidden" name="name" value="{{ $validated['name'] }}">
+                <p>{{ $validated['first_name'] }}{{ $validated['last_name'] }}</p>
+                <input type="hidden" name="first_name" value="{{ $validated['first_name'] }}">
+                <input type="hidden" name="last_name" value="{{ $validated['last_name'] }}">
             </div>
 
             <div class="form-group">
